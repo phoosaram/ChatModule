@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <!--Senders Message-->
+    <LinearLayout
+        android:id="@+id/sender_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:visibility="visible"
+        android:weightSum="1">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/sender_img"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".20"
+            android:src="@drawable/ic_send" />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".80"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <test.demo.com.chatmodule.Fonts.Roboto_Bold_TextView
+                android:id="@+id/sender_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="YAMI CARTER"
+                android:textAllCaps="true"
+                android:textColor="#494949"
+                android:textSize="14sp" />
+
+            <test.demo.com.chatmodule.Fonts.Roboto_Bold_TextView
+                android:id="@+id/sender_lastmsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Demo"
+                android:textAllCaps="false"
+                android:textColor="#494949"
+                android:textSize="12dp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--Reciever Message-->
+    <LinearLayout
+        android:id="@+id/reciever_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="1">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".80"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <test.demo.com.chatmodule.Fonts.Roboto_Bold_TextView
+                android:id="@+id/reciever_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right|center"
+                android:padding="5dp"
+                android:text="YAMI CARTER"
+                android:textAllCaps="true"
+                android:textColor="#494949"
+                android:textSize="14sp" />
+
+            <test.demo.com.chatmodule.Fonts.Roboto_Bold_TextView
+                android:id="@+id/reciever_lastmsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right|center"
+                android:padding="5dp"
+                android:text="Demo"
+                android:textAllCaps="false"
+                android:textColor="#494949"
+                android:textSize="12dp" />
+
+
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/reciever_user_img"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".20"
+            android:src="@mipmap/ic_launcher" />
+
+    </LinearLayout>
+</LinearLayout>
